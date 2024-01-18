@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen&family=Quicksand:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background: #2F3E46;
+    color: #FFFFFF;
+    height: 6vmin;
+    padding-left: 4vmin;
+    padding-top: 2vmin;
+}
+
+nav h1{
+    font-size: 2rem;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container{
+    background: #CAD2C5;
+    height: 84vmin;
+    display: flex;
+    justify-content: center;
+    padding-top: 8vh;
+}
+
+.todo{
+    background: #52796F;
+    max-width: 1350px;
+    width: 100%;
+    height: 700px;
+    border-radius: 1rem;
+}
+
+header {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+}
+
+header h1{
+    font-size: 2.5rem;
+    font-weight: 400;
+    cursor: default;
+    color: #84A98C;
+    margin-bottom: 2rem;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#task-form{
+    display: flex;
+}
+
+input,button {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#task-input{
+    flex: 1 1 0%;
+    background: #84A98C;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: #354F52;
+    font-size: 1.25rem;
+}
+
+#task-submit{
+    color: #354F52;
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.4s;
+    border-radius: 1rem;
+    padding: 1rem;
+    background: #84A98C;
+}
+
+#task-submit:hover {
+    opacity: 0.8;
+}
+
+#task-submit:active {
+    opacity: 0.6;
+}
+
+main {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.task-list{
+    padding: 1rem;
+}
+
+.task-list h2{
+    font-size: 2rem;
+    font-weight: 500;
+    color: #84A98C;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+#tasks{
+    margin-top: 10px;
+    margin-right: 5px;
+}
+
+#tasks.overflow{
+    overflow-y: auto;
+    max-height: 350px;
+}
+
+#tasks::-webkit-scrollbar{
+    width: 5px;
+}
+
+#tasks::-webkit-scrollbar-track{
+    background: #f1f1f1;
+    border-radius: 25px;
+}
+
+#tasks::-webkit-scrollbar-thumb{
+    background: #CAD2C5;
+    border-radius: 25px;
+}
+
+#tasks .task{
+    display: flex;
+    justify-content: space-between;
+    background: #354F52;
+    padding: 1rem;
+    overflow: auto;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tasks .task .content {
+    flex: 1 1 0%;
+}
+
+#tasks .task .content .text{
+    color: #CAD2C5;
+    font-size: 1.125rem;
+    width: 100%;
+    display: block;
+    font-weight: 400;
+}
+
+#tasks .task .actions{
+    display: flex;
+    margin: 0 -0.5rem;
+}
+
+.task .actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.task .actions button:hover {
+    opacity: 0.8;
+}
+
+.task .actions button:active {
+    opacity: 0.6;
+}
+
+.task .actions .edit{
+    color: #84A98C;
+}
+
+.task .actions .complete{
+    color: #84A98C;
+}
+
+.task .actions .delete{
+    color: #84A98C;
+}
